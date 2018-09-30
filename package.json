@@ -1,29 +1,14 @@
 {
-    "title": "Stylish Portfolio",
-    "name": "startbootstrap-stylish-portfolio",
-    "version": "4.1.1",
-    "description": "A stylish portfolio HTML template built with Bootstrap",
-    "keywords": [
-        "css",
-        "sass",
-        "html",
-        "responsive",
-        "theme",
-        "template"
-    ],
-    "homepage": "https://startbootstrap.com/template-overviews/stylish-portfolio",
-    "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio/issues",
-        "email": "feedback@startbootstrap.com"
-    },
+    "title": "web-site",
+    "name": "web-site",
+    "version": "1.0.0",
+    "description": "Site Oficial da Launcher Tech",
+    "homepage": "https://launchertech.com",
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "Launcher Tech",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-stylish-portfolio.git"
+        "url": "https://github.com/Launcher-Tech/WebSite.git"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
