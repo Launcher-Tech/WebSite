@@ -1,0 +1,22 @@
+/* MENU */
+.filter-header {
+   display: block;
+   position: absolute;
+   top: 0;
+   height: 100%;
+   width: 100%;
+   background-color: rgba(0, 0, 0, .3);
+}
+
+img#logo-menu {
+  width: 200px;
+}
+
+/* HOME */
+img#logo2 {
+  width: 130px;
+  margin-bottom: 30px;
+}
+img.home-logo {
+  width: 250px
+}

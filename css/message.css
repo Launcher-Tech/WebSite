@@ -1,0 +1,82 @@
+h2#titulo-message {
+  color: #ffffff
+}
+
+/* MESSAGE */
+section#message {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #212529;
+  background-image: url("../img/bg-footer.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+section#message .section-heading {
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+section#message .message-contato-launcher {
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+section#message .message-contato-launcher p {
+  font-size: 20px;
+}
+
+section#message .message-contato-launcher i {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+section#message .form-group {
+  margin-bottom: 25px;
+}
+
+section#message .form-group input,
+section#message .form-group textarea {
+  padding: 10px;
+}
+
+section#message .form-group input.form-control {
+  height: auto;
+}
+
+section#message .form-group textarea.form-control {
+  height: 190px;
+  resize: none;
+}
+
+section#message .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
+
+section#message ::-webkit-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#message :-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  /* Firefox 18- */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#message ::-moz-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  /* Firefox 19+ */
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section#message :-ms-input-placeholder {
+  font-weight: 700;
+  color: #ced4da;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}

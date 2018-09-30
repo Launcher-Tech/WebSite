@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* font-family: 'Raleway', sans-serif; */
+
+section#services {
+  background-color: #eeeeee;
+}
+section#services .row {
+  color: #000000
+}
+
+h2#titulo-services {
+  color: #000000
+}
+
+.NoMarginNoPadding {
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* .padding-left {
+  padding-left: 20px;
+}
+.padding-right {
+  padding-right: 20px;
+} */
+
+h2.titulo-do-servico {
+  margin-top: 40px;
+  font-size: 25px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+p.descricao-do-servico {
+  margin-top: 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+button.button-do-servico {
+  border: 1px solid #333333;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  padding-right: 25px;
+  padding-left: 25px;
+  margin-bottom: 25px
+}
+button.button-do-servico:hover {
+  background-color: #333333;
+  color: white;
+}
+
+.img-service {
+  width: 100%
+}
+
+.icon-service-modal {
+    display: block;
+    cursor: pointer;
+}

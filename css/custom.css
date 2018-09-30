@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+/* font-family: 'Raleway', sans-serif; */
+html, body {
+  background-color: #eeeeee
+}
+
+h2.titulo {
+  font-size: 30px;
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+hr.hr-division {
+   border-color: #000000
+}
