@@ -1,6 +1,38 @@
 (function($) {
   "use strict"; // Start of use strict
 
+  // Magnific popup calls
+  // $('.portfolio-box').magnificPopup({
+  //   type:'inline',
+  //   midClick: true
+  // });
+  $('.popup-gallery').magnificPopup({
+    delegate: 'a',
+    type: 'inline',
+    gallery: {
+      enabled: true,
+      preload: [0, 1]
+    }
+  });
+
+  $('.open-popup-link').magnificPopup({
+    type:'inline',
+    midClick: true
+  });
+
+  // Scroll reveal calls
+  window.sr = ScrollReveal();
+  sr.reveal('.sr-about1', {
+    duration: 1000,
+    scale: 0.9,
+    distance: '0px'
+  }, 200);
+  sr.reveal('.sr-about2', {
+    duration: 1000,
+    scale: 0.9,
+    distance: '0px'
+  }, 200);
+
   // Closes the sidebar menu
   $(".menu-toggle").click(function(e) {
     e.preventDefault();

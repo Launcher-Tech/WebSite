@@ -1,14 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /* EQUIPE */
 section#team {
-  /* background-color: #ffffff; */
-  background-color: #eeeeee
+  background-color: #eeeeee;
 }
-
-div.team-container-ft2 {
+div.team-container-ft {
   display: inline-block;
-  width: 250px; /* SEM ESSA LINHA DA ERRO */
+  width: 250px;
   height: 250px;
   padding: 0;
   margin: 5px;
@@ -19,10 +18,9 @@ div.div-img {
   z-index: 1;
   margin: 0 !important;
   padding: 0 !important;
-  /* border-radius: 50%; */
 }
 
-img.team-ft2 {
+img.team-ft2, img.team-ft-modal {
   z-index: 0;
   width: 100%;
   margin: 0;
@@ -37,11 +35,25 @@ div.div-bg {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  -moz-transition: all .5s ease-in;
-  -o-transition: all .5s ease-in;
-  -webkit-transition: all .5s ease-in;
-  transition: all .5s ease-in;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.modal-name-team,
+.modal-function-team {
+  color: #333;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Unica One', cursive;
+  margin: 0
+}
+
+.modal-name-team {
+  margin-top: 0
+}
+
+.modal-description-function-team {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 p.name-team {
@@ -63,39 +75,48 @@ p.name-team::after {
   display: block;
   content: "";
   position: relative;
-  /* background-color: #0066ff; */
   background-color: rgba(255, 255, 255, .5);
   height: 1px;
-  width: 100px;
+  width: 80px;
   margin: auto;
 }
 p.name-team2::after {
   display: block;
   content: "";
   position: relative;
-  /* background-color: #0066ff; */
   background-color: rgba(255, 255, 255, .5);
   height: 1px;
-  width: 100px;
+  width: 80px;
   margin: auto;
 }
-
 p.function-team {
-  font-family: 'Source Sans Pro';
+  font-family: 'Unica One', cursive;
   color: rgba(255, 255, 255, .75);
   font-weight: bold;
 }
 
+div.div-bg,
+p.name-team,
+p.name-team::after,
+p.name-team2::after,
+p.function-team {
+  -moz-transition: all .5s ease-in;
+  -o-transition: all .5s ease-in;
+  -webkit-transition: all .5s ease-in;
+  transition: all .5s ease-in;
+}
+
 div.div-bg:hover {
-  background-color: rgba(0, 0, 0, 0.025);
+  background-color: rgba(0, 0, 0, 0);
+}
+div.div-bg:hover > p,
+div.div-bg:hover > p.name-team::after,
+div.div-bg:hover > p.name-team2::after {
+  color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0)
 }
 
 /* CSS ESTILO ORIGINAL */
-
-div.team-container-ft {
-  display: inline-block;
-  width: 220px;
-}
 
 img.team-ft {
   width: 200px;
