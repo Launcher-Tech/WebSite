@@ -772,6 +772,20 @@
   
   <!-- Requisitions -->
   <script src="js/axios.min.js"></script>
+	
+  <script>
+	var request = axios.create({
+		baseURL: 'https://launchertech.com/',
+		timeout: 5000,
+		headers: {
+        		'Access-Control-Allow-Origin': 'launchertech.com',
+        		'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
+        		'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
+        		'Access-Control-Allow-Credentials': 'true'
+      		},
+		withCredentials: true
+	});
+  </script>
 
   <script type="text/javascript">
 
@@ -781,23 +795,16 @@
       let email = document.getElementById('email').value
       let message = document.getElementById('messages').value
       
-      let URL = 'http://launchertech.com:21033/contact'
       let body = {
         subject: subject,
         name: name,
         email: email,
         text: message
       }
-      let headers = {
-        'Access-Control-Allow-Origin': 'http://launchertech.com',
-        'Access-Control-Allow-Headers': 'Origin, X-Requested-With, Content-Type, Accept',
-        'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,OPTIONS',
-        'Access-Control-Allow-Credentials': 'true'
-      }
+      
 
-      axios.post(URL, 
+      request.post('/contact/', 
         body,
-        headers
       ).then(function (response) {
         document.getElementById('success').style.display = 'block'
         document.getElementById('error').style.display = 'none'
